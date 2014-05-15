@@ -1,0 +1,35 @@
+
+
+Graph 0:
+
+    [=]
+     |
+   |----|
+   |    |
+ id(X) c(0)
+Unknown character
+Unknown character
+Unknown character
+Unknown character
+
+
+Graph 1:
+
+               while
+                 |
+     |----------------|
+     |                |
+    [<]              [;]
+     |                |
+   |----|     |----------|
+   |    |     |          |
+ id(X) c(3) print       [=]
+              |          |
+              |     |-------|
+              |     |       |
+            id(X) id(X)    [+]
+                            |
+                          |----|
+                          |    |
+                        id(X) c(1)
+Unknown character

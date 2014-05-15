@@ -1,0 +1,41 @@
+#######################
+##    Hello World!   ##
+##  by Miles Rausch  ##
+#######################
+
+# Declare the World (600x250, white)
+world _w IS 600
+world _h IS 400
+world _color IS gray
+
+#%%%%%%%%%%%%%%%%%%%%%%%#
+%%
+#%%%%%%%%%%%%%%%%%%%%%%%#
+
+##########################
+# Procedure declaration  #
+##########################
+procedure draw_green_robot(integer number, position where)
+    robot Green_robot_{number}
+	Green_robot_{number} _name IS "Vaporware"
+	Green_robot_{number} _location IS where
+	Green_robot_{number} _size IS 50
+	Green_robot_{number} _color IS green
+
+#%%%%%%%%%%%%%%%%%%%%%%%#
+%%
+#%%%%%%%%%%%%%%%%%%%%%%%#
+
+robot Red_robot
+Red_robot _name IS "Clango"
+Red_robot _size IS 50
+Red_robot _location IS (0,0)
+Red_robot _color IS red
+
+repeat (x, 1, 5)
+     position where IS (x*50,x*50)
+     draw_green_robot(x, where)
+
+string first IS "Hello"
+string second IS "World"
+Red_robot _says first.." "..second

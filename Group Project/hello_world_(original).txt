@@ -1,0 +1,150 @@
+#######################
+##    Hello World!   ##
+##  by Miles Rausch  ##
+#######################
+
+# Declare the World (600x250, white)
+world _w IS 600
+world _h IS 250
+world _color IS gray
+
+#%%%%%%%%%%%%%%%%%%%%%%%#
+%%
+#%%%%%%%%%%%%%%%%%%%%%%%#
+
+##########################
+# Procedure declarations #
+##########################
+procedure draw_vowel(string what_vowel)
+	if (what_vowel = "e")
+		Drawer _direction IS 270
+		Drawer _move 100
+		Drawer _direction IS 0
+		Drawer _move 50
+		Drawer _direction IS 180
+		Drawer _move 50
+		Drawer _direction IS 90
+		Drawer _move 60
+		Drawer _direction IS 0
+		Drawer _move 30
+		Drawer _direction IS 180
+		Drawer _move 30
+		Drawer _direction IS 90
+		Drawer _move 40
+		Drawer _direction IS 0
+		Drawer _move 40
+	elseif (what_vowel = "o")
+		Drawer _direction IS 270
+		Drawer _move 100
+		Drawer _direction IS 0
+		Drawer _move 30
+		Drawer _direction IS 90
+		Drawer _move 100
+		Drawer _direction IS 180
+		Drawer _move 30
+
+procedure draw_l()
+	Drawer _direction IS 270
+	Drawer _move 100
+	Drawer _direction IS 0
+	Drawer _move 50
+
+#%%%%%%%%%%%%%%%%%%%%%%%#
+%%
+#%%%%%%%%%%%%%%%%%%%%%%%#
+
+robot Drawer
+string robot_name
+string what_vowel
+
+# Get user input
+print "Hi, what's your name?"
+get robot_name
+Drawer _name IS robot_name
+print robot_name " is my name, too!"
+
+# Begin drawing "Hello World"
+
+# "H"
+	Drawer _location IS (0,0)
+	Drawer _trailcolor IS blue
+	Drawer _direction IS 270
+	Drawer _move 100
+	Drawer _location IS (0,40)
+	Drawer _direction IS 0
+	Drawer _move 50
+	Drawer _location IS (50,0)
+	Drawer _direction IS 270
+	Drawer _move 100
+
+# "E"
+	Drawer _location IS (70, 0)
+	Drawer _trailcolor IS yellow
+	draw_vowel("e")
+
+# "L"
+	Drawer _location IS (130, 0)
+	Drawer _trailcolor IS blue
+	draw_l()
+	
+# "L"
+	Drawer _location IS (190, 0)
+	Drawer _trailcolor IS yellow
+	draw_l()
+	
+# "O"
+	Drawer _location IS (250, 0)
+	Drawer _trailcolor IS blue
+	draw_vowel("o")
+	
+# "W"
+	Drawer _location IS (300, 0)
+	Drawer _trailcolor IS yellow
+	Drawer _direction IS 270
+	Drawer _move 100
+	Drawer _direction IS 60
+	Drawer _move 50
+	Drawer _direction IS 300
+	Drawer _move 50
+	Drawer _direction IS 90
+	Drawer _move 100
+	
+# "O"
+	Drawer _location IS (360, 0)
+	Drawer _trailcolor IS blue
+	draw_vowel("o")
+	
+# "R"
+	Drawer _location IS (400, 0)
+	Drawer _trailcolor IS yellow
+	Drawer _direction IS 270
+	Drawer _move 100
+	Drawer _direction IS 90
+	Drawer _move 100
+	Drawer _direction IS 330
+	Drawer _move 56
+	Drawer _direction IS 210
+	Drawer _move 50
+	Drawer _direction IS 330
+	Drawer _move 50
+	Drawer _direction IS 270
+	Drawer _move 40
+	
+
+# "L"
+	Drawer _location IS (460, 0)
+	Drawer _trailcolor IS blue
+	draw_l()
+	
+# "D"
+	Drawer _location IS (520, 0)
+	Drawer _trailcolor IS yellow
+	Drawer _direction IS 270
+	Drawer _move 100
+	Drawer _direction IS 60
+	Drawer _move 71
+	Drawer _direction IS 120
+	Drawer _move 71
+
+Drawer _location IS (0,200)
+print "Thank you!"

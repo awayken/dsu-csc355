@@ -1,0 +1,48 @@
+<?xml version="1.0" standalone="no"?>
+<world width="600" height="400" color="gray">
+    <robots>
+	     <robot id="Red_robot" width="50" height="50" color="red">
+		      <name>Clango</name>
+			  <location>
+			       <x_loc>0</x_loc>
+				   <y_loc>0</y_loc>
+			  </location>
+			  <says>Hello World</says>
+		 </robot>
+	     <robot id="Green_robot_1" width="50" height="50" color="green">
+		      <name>Vaporware</name>
+			  <location>
+			       <x_loc>50</x_loc>
+				   <y_loc>50</y_loc>
+			  </location>
+		 </robot>
+	     <robot id="Green_robot_2" width="50" height="50" color="green">
+		      <name>Vaporware</name>
+			  <location>
+			       <x_loc>100</x_loc>
+				   <y_loc>100</y_loc>
+			  </location>
+		 </robot>
+	     <robot id="Green_robot_3" width="50" height="50" color="green">
+		      <name>Vaporware</name>
+			  <location>
+			       <x_loc>150</x_loc>
+				   <y_loc>150</y_loc>
+			  </location>
+		 </robot>
+	     <robot id="Green_robot_4" width="50" height="50" color="green">
+		      <name>Vaporware</name>
+			  <location>
+			       <x_loc>200</x_loc>
+				   <y_loc>200</y_loc>
+			  </location>
+		 </robot>
+	     <robot id="Green_robot_5" width="50" height="50" color="green">
+		      <name>Vaporware</name>
+			  <location>
+			       <x_loc>250</x_loc>
+				   <y_loc>250</y_loc>
+			  </location>
+		 </robot>
+     </robots>
+</world>

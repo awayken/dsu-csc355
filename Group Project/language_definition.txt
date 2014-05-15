@@ -1,0 +1,98 @@
+===========================================================================
+=                            XRML (or Zermal)                             =
+=                         Language Specification                          =
+=                            by Miles Rausch                              =
+===========================================================================
+
+===========================================================================
+Datatypes
+
+robot
+integer
+string
+real
+position
+
+Datatype - Robot
+
+robot Ranger_1
+Ranger_1 _name IS "Robby"         string
+Ranger_1 _location IS (0,0)       position
+Ranger_1 _size IS 50              integer
+Ranger_1 _color IS red            color {red, yellow, orange, green, blue, 
+                                         violet, black, white, gray, or poo}
+
+Ranger_1 _says "Hello"            returns "Hello"
+
+
+Datatype - Integer
+
+integer x IS 0                    integer
+
+
+Datatype - String
+
+string company IS "Pearson"       string
+
+
+Datatype - Real
+
+real pi IS 3.1415                 float
+
+Datatype - Position
+
+position home IS (0,0)            (integer, integer) with upper left being (0,0)
+===========================================================================
+
+===========================================================================
+Operators
+
+..                                concatenate strings
++                                 add integers or reals
+-                                 subtract integers or reals
+*                                 multiply integers or reals
+/                                 divide integers or reals
+%                                 mod integers or reals
+IS                                assigns
+{x}                               returns literal translation of string or integer x
+#                                 comments
+===========================================================================
+
+===========================================================================
+World
+
+world _w IS 800                   width integer
+world _h IS 600                   height integer
+world _color IS green             color (see above)
+===========================================================================
+
+===========================================================================
+Iteration
+
+repeat(5)                         repeat the block 5 times
+     block
+
+repeat (x, 1, 5)                  repeat the block, using x as the loop number
+     block
+===========================================================================
+
+===========================================================================
+Procedures
+
+procedure create (integer x)      creates a procedure
+     block
+===========================================================================
+
+===========================================================================
+Layout
+
+define world
+
+%%
+
+procedures
+
+%%
+
+program code
+===========================================================================

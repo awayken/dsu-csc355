@@ -1,0 +1,30 @@
+TEST
+
+Test on Tuesday 10/4 and Thursday 10/6.
+	- Take home 10/4 due 10/6
+	- In class 10/6 (bring laptop)
+	- Stuff from Day One to before today's class.
+	
+Assignment #4: YACC/Bison (10/11)
+	* Expression grammar
+	* +, -, *, /, %: binary operations
+	* @: unary operator to double a value
+	* about: unary, means "term is about this number"
+	* id, num, ZERO, TWO, TEN
+	* ( )
+
+Assume a case-insensitive language.
+
+5 * TEN = 50
+	
+Does the string belong in our language?  This is the only output he needs.  "Yes" or "no".
+
+YACC does not build ids or numbers.  That's for scanners.  Parser is the most important part.
+It drives the compiler.  This is the part that holds it all together.
+
+Individual.
+
+Build this up in small steps.
+1 page description of assumptions (case, ...)
+
+Resources: Library.
